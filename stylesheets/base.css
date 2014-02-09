@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "ca_kisskissbangbangregular";
+    src: url("../fonts/ca_kisskissbangbang-webfont.eot");
+    src: url("../fonts/ca_kisskissbangbang-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/ca_kisskissbangbang-webfont.woff") format("woff"),
+         url("../fonts/ca_kisskissbangbang-webfont.ttf") format("truetype"),
+         url("../fonts/ca_kisskissbangbang-webfont.svg#ca_kisskissbangbangregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "HD Logo";
+    src: url("../fonts/hd.eot");
+    src: url("../fonts/hd.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/hd.woff") format("woff"),
+         url("../fonts/hd.ttf") format("truetype"),
+         url("../fonts/hd.svg#hd") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font: 300 1em/1.75 "Roboto Slab", serif;
+	background: #EDE5E2;
+	color: #09193b;
+}
+a {
+	color: #EA3556;
+	text-decoration: none;
+	background-color: rgba(97, 210, 214, 0.5);
+}
+img {
+	max-width: 100%;
+}
+
+header[role="banner"] {
+	/*background-color: #EDDE45;*/
+	background-color: #ED146F;
+	font-family: "CA Dater";
+	padding: 0 10%;
+	position: relative;
+	height: 12em;
+}
+header[role="banner"] a {
+	background-color: transparent;
+	/*color: #ED146F;*/
+	color: #EDDE45;
+}
+header[role="banner"] a:hover {
+	color: #9BF0E9;
+}
+header[role="banner"] h1 {
+	width: 24em;
+	margin: 0;
+	position: absolute;
+	top: -1em;
+	left: -1em;
+}
+header[role="banner"] h1 a:before {
+	font: normal 315px/1 "HD Logo";
+	speak: none;
+	content: "\e605";
+}
+nav {
+	position: absolute;
+	right: 10%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	font-size: 1.75em;
+	font-weight: bold;
+}
+nav ul {
+	list-style: none;
+}
+nav li {
+	display: inline-block;
+	margin-right: 1em;
+}
+main {
+	padding: 0 20%;
+	position: relative;
+}
+footer {
+	padding: 1em 10%;
+	border-top: 1px dashed #ED146F;
+}
+main h1, h2, h3, h4 {
+	font-family: "CA Dater", "Arial Narrow";
+	text-transform: uppercase;
+	color: #364158;
+}
+
+.alignleft {
+	float: left;
+	margin: 0.25em 2em 0.5em -7em;
+}
+.alignright {
+	float: right;
+	margin: 0.25em -7em 0.5em 2em;
+}
