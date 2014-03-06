@@ -1,14 +1,4 @@
 @font-face {
-    font-family: "ca_kisskissbangbangregular";
-    src: url("../fonts/ca_kisskissbangbang-webfont.eot");
-    src: url("../fonts/ca_kisskissbangbang-webfont.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/ca_kisskissbangbang-webfont.woff") format("woff"),
-         url("../fonts/ca_kisskissbangbang-webfont.ttf") format("truetype"),
-         url("../fonts/ca_kisskissbangbang-webfont.svg#ca_kisskissbangbangregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: "HD Logo";
     src: url("../fonts/hd.eot");
     src: url("../fonts/hd.eot?#iefix") format("embedded-opentype"),
@@ -20,34 +10,38 @@
 }
 
 body {
-	font: 300 1em/1.75 "Roboto Slab", serif;
+	font: normal 1em/1.75 DIN-Regular, "Helvetica Neue", Arial, Helvetica, sans-serif;
 	background: #EDE5E2;
-	color: #09193b;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
 }
 a {
 	color: #EA3556;
+	background-color: #EDDE45;
 	text-decoration: none;
-	background-color: rgba(97, 210, 214, 0.5);
 }
 img {
 	max-width: 100%;
 }
 
 header[role="banner"] {
-	/*background-color: #EDDE45;*/
-	background-color: #ED146F;
-	font-family: "CA Dater";
+	background-color: #EDDE45;
+	/*background-color: #ED146F;*/
+	background: url(http://farm8.staticflickr.com/7428/12290153713_2978062a75_h.jpg) no-repeat 50% 50%;
 	padding: 0 10%;
 	position: relative;
 	height: 12em;
+
+	/* calendar too */
 }
 header[role="banner"] a {
 	background-color: transparent;
-	/*color: #ED146F;*/
-	color: #EDDE45;
+	color: #fff;
+	/*color: #EDDE45;*/
+	transition: color 0.25s ease-out;
 }
 header[role="banner"] a:hover {
-	color: #9BF0E9;
+	color: #fff;
 }
 header[role="banner"] h1 {
 	width: 24em;
@@ -82,19 +76,57 @@ main {
 }
 footer {
 	padding: 1em 10%;
-	border-top: 1px dashed #ED146F;
+	background: #e0d8d5;
+	overflow: hidden;
+	position: relative;
+}
+footer:before {
+	font: normal 250px/1 "HD Logo";
+	speak: none;
+	content: "\e605";
+	color: #EDE5E2;
+	position: absolute;
+	display: block;
+	top: -100px;
+	right: 0;
+	-webkit-transform: rotate(180deg);
 }
 main h1, h2, h3, h4 {
-	font-family: "CA Dater", "Arial Narrow";
 	text-transform: uppercase;
-	color: #364158;
+}
+main h1 {
+	font-size: 4em;
+	line-height: 1;
+	margin: 0.5em 0;
+}
+article > header {
+	margin: 2.5em 0 2.5em -10%;
+	width: 120%;
+	text-align: center;
+}
+.meta {
+	color: rgba(9, 25, 59,  0.35);
+	border: 1px solid rgba(9, 25, 59,  0.15);
+	border-width: 1px 0;
+	font-size: 0.625em;
+	text-transform: uppercase;
+	font-family: Georgia;
+}
+.meta a {
+	background: none;
 }
 
 .alignleft {
 	float: left;
-	margin: 0.25em 2em 0.5em -7em;
+	margin: 0.25em 2em 0.5em 0;
 }
 .alignright {
 	float: right;
-	margin: 0.25em -7em 0.5em 2em;
+	margin: 0.25em 0 0.5em 2em;
+}
+
+main h1, h2, h3, h4,
+header[role="banner"] {
+	font-family: "DINCond-Bold";
+	text-transform: uppercase;
 }
