@@ -27,7 +27,7 @@ img {
 header[role="banner"] {
 	background-color: #EDDE45;
 	/*background-color: #ED146F;*/
-	background: url(http://farm8.staticflickr.com/7428/12290153713_2978062a75_h.jpg) no-repeat 50% 50%;
+	background: #EA3556 url(http://farm4.staticflickr.com/3786/12289960065_33205d9732_h.jpg) no-repeat 50% 50%;
 	padding: 0 10%;
 	position: relative;
 	height: 12em;
@@ -68,7 +68,7 @@ nav ul {
 }
 nav li {
 	display: inline-block;
-	margin-right: 1em;
+	margin-right: 0.75em;
 }
 main {
 	padding: 0 20%;
@@ -129,4 +129,19 @@ main h1, h2, h3, h4,
 header[role="banner"] {
 	font-family: "DINCond-Bold";
 	text-transform: uppercase;
+}
+
+.social {
+	list-style: none;
+	padding: 0;
+}
+.social li {
+	display: inline;
+	margin-right: 1em;
+}
+.social [data-icon] {
+	background: none;
+}
+.social [data-icon]:before {
+	font-size: 1.5em;
 }

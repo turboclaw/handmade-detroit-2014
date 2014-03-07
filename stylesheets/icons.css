@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'hd-social';
+	src:url('../fonts/hd-social.eot?kkca9z');
+	src:url('../fonts/hd-social.eot?#iefixkkca9z') format('embedded-opentype'),
+		url('../fonts/hd-social.woff?kkca9z') format('woff'),
+		url('../fonts/hd-social.ttf?kkca9z') format('truetype'),
+		url('../fonts/hd-social.svg?kkca9z#hd-social') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon] {
+	font-family: 'hd-social';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[data-icon="twitter"]:before {
+	content: "\e601";
+}
+[data-icon="facebook"]:before {
+	content: "\e602";
+}
+[data-icon="flickr"]:before {
+	content: "\e603";
+}
+[data-icon="etsy"]:before {
+	content: "\e600";
+}
+[data-icon="instagram"]:before {
+	content: "\e604";
+}
+[data-icon="pinterest"]:before {
+	content: "\e605";
+}
