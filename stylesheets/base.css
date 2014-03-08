@@ -31,7 +31,7 @@ header[role="banner"] {
 	padding: 0 10%;
 	position: relative;
 	height: 12em;
-
+	z-index: 1;
 	/* calendar too */
 }
 header[role="banner"] a {
@@ -144,4 +144,38 @@ header[role="banner"] {
 }
 .social [data-icon]:before {
 	font-size: 1.5em;
+}
+
+.home header {
+	background: #262524;
+	height: 6.5625em;
+}
+.home header h1 {
+	top: -0.666666667em;
+	left: 2em;
+}
+.home header h1 a:before {
+	font-size: 175px;
+}
+.home main {
+	padding: 0;
+}
+.home section {
+	min-height: 20em;
+	padding: 2em 10%;
+	color: #fff;
+	text-align: center;
+}
+section h1 {
+	color: #fff;
+	font-size: 6em;
+}
+section.ducf {
+	background: url(http://farm4.staticflickr.com/3801/12290160123_c917164e71_h.jpg) no-repeat 50% 50%;
+}
+section.blog {
+	background: url(http://farm8.staticflickr.com/7333/12290270343_5655613046_h.jpg) no-repeat 50% 50%;
+}
+section.about {
+	background: url(http://farm8.staticflickr.com/7346/12290240723_a3cd5ee56c_h.jpg) no-repeat 50% 50%;
 }
