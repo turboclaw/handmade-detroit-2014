@@ -31,8 +31,6 @@ header[role="banner"] {
 	padding: 0 10%;
 	position: relative;
 	height: 12em;
-	z-index: 1;
-	/* calendar too */
 }
 header[role="banner"] a {
 	background-color: transparent;
@@ -104,8 +102,11 @@ article > header {
 	width: 120%;
 	text-align: center;
 }
+article {
+	margin-bottom: 4em;
+}
 .meta {
-	color: rgba(9, 25, 59,  0.35);
+	color: rgba(9, 25, 59,  0.5);
 	border: 1px solid rgba(9, 25, 59,  0.15);
 	border-width: 1px 0;
 	font-size: 0.625em;
@@ -153,6 +154,7 @@ header[role="banner"] {
 .home header {
 	background: #262524;
 	height: 6.5625em;
+	z-index: 1;
 }
 .home header h1 {
 	top: -0.666666667em;
@@ -239,4 +241,27 @@ section.about {
 }
 .calendar__event__location {
 	font-size: 0.75em;
+}
+
+.calendar--large {
+	padding: 0;
+	margin-top: -1em;
+}
+.calendar--large .calendar__event {
+	margin-bottom: 1.5em;
+	padding-left: 6.5em;
+}
+.calendar--large .calendar__event__title {
+	font-size: 2em;
+	margin-top: 0;
+}
+.calendar--large .calendar__event date {
+	width: 5em;
+	margin-left: -6.5em;
+}
+.calendar--large .calendar__event date .month {
+	font-size: 1.5em;
+}
+.calendar--large .calendar__event date .day {
+	font-size: 3.5em;
 }
