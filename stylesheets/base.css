@@ -171,7 +171,7 @@ header[role="banner"] {
 	padding: 2em 10%;
 	color: #fff;
 	text-align: center;
-	background-size: cover;
+	/*background-size: cover;*/
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
@@ -190,6 +190,10 @@ section.blog {
 }
 section.about {
 	background-image: url(http://farm8.staticflickr.com/7346/12290240723_a3cd5ee56c_h.jpg);
+}
+.home section p > span {
+	background: rgba(234, 53, 86, 0.75);
+	box-shadow: 0 0 0 3px rgba(234, 53, 86, 0.75);
 }
 
 .calendar {
