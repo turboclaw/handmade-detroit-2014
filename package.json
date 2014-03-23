@@ -1,0 +1,16 @@
+{
+  "name": "handmade-detroit-2014",
+  "version": "0.0.0",
+  "description": "Wordpress theme for handmadedetroit.com and detroiturbancraftfair.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/turboclaw/handmade-detroit-2014.git"
+  },
+  "author": "Dan Nixon",
+  "license": "ISC",
+  "homepage": "http://handmadedetroit.com",
+  "devDependencies": {
+    "gulp": "~3.5.6",
+    "gulp-minify-css": "~0.3.0"
+  }
+}
