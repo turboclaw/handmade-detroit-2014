@@ -1,2 +1,5 @@
-@import "stylesheets/base.css";
-@import "stylesheets/icons.css";
+@import "bower_components/normalize-css/normalize.css";
+
+@import "css/fonts.css";
+@import "css/base.css";
+@import "css/icons.css";
