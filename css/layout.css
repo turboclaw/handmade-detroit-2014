@@ -11,3 +11,8 @@ main {
 	margin: 0 auto;
 	width: 65%;
 }
+
+[role="contentinfo"] {
+	padding: 2em 10%;
+	background: #e0d8d5;
+}
