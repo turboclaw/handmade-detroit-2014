@@ -4,16 +4,18 @@ body {
 	color: #444;
 	-webkit-font-smoothing: antialiased;
 }
-a {
+a:link, a:visited {
 	color: #ea3556;
 	background-color: #edde45;
 	text-decoration: none;
 }
-a:hover {
+a:hover, a:active, a:focus {
 	background-color: #ea3556;
 	color: #fff;
 }
-img {
+img,
+object,
+video {
 	max-width: 100%;
 }
 p,

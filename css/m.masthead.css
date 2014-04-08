@@ -1,0 +1,15 @@
+.masthead {
+	background: #ea3556 url(http://farm4.staticflickr.com/3786/12289960065_33205d9732_h.jpg) no-repeat 50% 50%;
+}
+.masthead__logo {
+	width: 50%;
+}
+.masthead__logo a {
+	display: block;
+	background: transparent url(../img/handmade-detroit.svg) no-repeat 50% 50%;
+	background-size: cover;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.masthead__nav {}
