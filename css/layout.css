@@ -9,10 +9,20 @@
 
 main {
 	margin: 0 auto;
-	width: 65%;
+	width: 85%;
 }
 
 [role="contentinfo"] {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+@media screen and (min-width: 50em) {
+	main {
+		width: 65%;
+	}
+	[role="contentinfo"] {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
 }

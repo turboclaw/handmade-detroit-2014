@@ -1,13 +1,10 @@
 .masthead {
 	background: #ea3556 url(http://farm4.staticflickr.com/3786/12289960065_33205d9732_h.jpg) no-repeat 50% 50%;
-	display: flex;
-	height: 12em;
 }
 .masthead__logo {
-	width: 63%;
+	width: 100%;
 	position: relative;
-	margin-left: -3%;
-	margin-right: -4%;
+	margin: 0 -4% 0 -3%;
 }
 .masthead__logo a {
 	display: block;
@@ -21,22 +18,19 @@
 	width: 800px;
 }
 .masthead__nav {
-	width: 33%;
 	position: relative;
-	display: flex;
-	font: bold 1.75em "DIN Condensed Bold", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+	padding: 0.75em 0;
+	font: bold 1.25em "DIN Condensed Bold", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
 	text-transform: uppercase;
 }
 .masthead__nav ul {
 	width: 100%;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-end;
-	align-content: center;
 	list-style: none;
+	text-align: center;
 }
 .masthead__nav li {
 	margin-left: 0.892857143em;
+	display: inline-block;
 }
 .masthead__nav li:first-child {
 	margin-left: 0;
@@ -47,4 +41,32 @@
 }
 .masthead__nav a:hover, .masthead__nav a:active, .masthead__nav a:focus {
 	color: #ea3556;
+}
+
+@media screen and (min-width: 50em) {
+	.masthead {
+		display: -webkit-flex;
+		display: flex;
+		height: 12em;
+	}
+	.masthead__logo {
+		width: 63%;
+	}
+	.masthead__nav {
+		display: -webkit-flex;
+		display: flex;
+		width: 33%;
+		padding: 0;
+		font-size: 1.75em;
+	}
+	.masthead__nav ul {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		-webkit-justify-content: flex-end;
+		justify-content: flex-end;
+		-webkit-align-content: center;
+		align-content: center;
+	}
 }
