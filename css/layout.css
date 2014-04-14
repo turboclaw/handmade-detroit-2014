@@ -9,7 +9,8 @@
 
 main {
 	margin: 0 auto;
-	width: 85%;
+	width: 82.5%;
+	font-size: 0.875em;
 }
 
 [role="contentinfo"] {
@@ -20,6 +21,7 @@ main {
 @media screen and (min-width: 50em) {
 	main {
 		width: 65%;
+		font-size: 1em;
 	}
 	[role="contentinfo"] {
 		padding-left: 10%;

@@ -8,6 +8,27 @@ select {
 	width: 100%;
 	margin-bottom: 0.25em;
 }
+input[type="text"], input[type="email"], input[type="url"], input[type="number"],
+textarea {
+	-webkit-appearance: none;
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="number"],
+textarea,
+select {
+	font: normal 1em/1.5 "DIN Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
+	border: 1px solid rgba(68, 68, 68, 0.5);
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 0.125em 0.25em;
+	transition: all 0.25s ease-out;
+	border-radius: 0;
+	box-shadow: none;
+}
+input:focus,
+textarea:focus,
+select:focus {
+	border-color: #ea3556;
+	outline: 0;
+}
 label:last-child,
 input:last-child,
 textarea:last-child,
@@ -20,6 +41,7 @@ select:last-child {
 }
 
 button,
+input[type="submit"],
 .button {
 	display: inline-block;
 	border: 0;
@@ -28,4 +50,5 @@ button,
 	padding: 0.25em 0.5em;
 	background-color: #ea3556;
 	color: #fff;
+	border-radius: 0;
 }

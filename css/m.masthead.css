@@ -19,7 +19,7 @@
 }
 .masthead__nav {
 	position: relative;
-	padding: 0.75em 0;
+	padding: 0.75em 0 0.5em;
 	font: bold 1.25em "DIN Condensed Bold", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
 	text-transform: uppercase;
 }

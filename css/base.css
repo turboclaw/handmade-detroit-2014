@@ -1,6 +1,6 @@
 body {
 	font: normal 1em/1.75 "DIN Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
-	background: #EDE5E2;
+	background: #ede5e2;
 	color: #444;
 	-webkit-font-smoothing: antialiased;
 }
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 }
 h1 {
-	font-size: 4em;
+	font-size: 3em;
 	line-height: 1.125em;
 	margin-bottom: 0.4375em;
 }
@@ -76,4 +76,10 @@ blockquote {
 	font-family: Georgia serif;
 	font-style: italic;
 	background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 50em) {
+	h1 {
+		font-size: 4em;
+	}
 }
