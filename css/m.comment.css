@@ -1,0 +1,29 @@
+.comment-list {
+	list-style: none;
+}
+.media--comment .media__footer {
+	width: 20%;
+	float: left;
+	font-size: 0.857142857em;
+	text-align: center;
+}
+.media--comment .media__image {
+	margin-bottom: 0.5em;
+	border-radius: 3em;
+	overflow: hidden;
+}
+.media--comment .media__body {
+	width: 75%;
+	float: left;
+	margin-left: 5%;
+}
+.media--comment .media__image img {
+	display: block;
+}
+.media__comment-meta {
+	display: none;
+	opacity: 0.5;
+}
+.media--comment:hover .media__comment-meta {
+	display: inherit;
+}
