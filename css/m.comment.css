@@ -1,5 +1,16 @@
+.comments {
+	border-top: 0.5em solid rgba(38, 37, 36, 0.125);
+	margin-top: 3em;
+}
+
 .comment-list {
 	list-style: none;
+}
+.media--comment {
+	padding: 0.5em;
+}
+.even .media--comment {
+	background-color: rgba(168, 168, 168, 0.125);
 }
 .media--comment .media__footer {
 	width: 20%;
@@ -9,7 +20,7 @@
 }
 .media--comment .media__image {
 	margin-bottom: 0.5em;
-	border-radius: 3em;
+	border-radius: 10em;
 	overflow: hidden;
 }
 .media--comment .media__body {

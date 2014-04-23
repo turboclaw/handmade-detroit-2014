@@ -15,7 +15,7 @@ textarea {
 input[type="text"], input[type="email"], input[type="url"], input[type="number"],
 textarea,
 select {
-	font: normal 1em/1.5 "DIN Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font: normal 16px/1.5 "DIN Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
 	border: 1px solid rgba(68, 68, 68, 0.5);
 	background-color: rgba(255, 255, 255, 0.5);
 	padding: 0.125em 0.25em;
@@ -39,6 +39,13 @@ select:last-child {
 .form__control-group {
 	margin-bottom: 1em;
 }
+.form__control-group--toggle {
+	padding-left: 1.5em;
+}
+.form__control-group--toggle input {
+	float: left;
+	margin: 0.375em 0 0 -1.5em;
+}
 
 button,
 input[type="submit"],
@@ -51,4 +58,15 @@ input[type="submit"],
 	background-color: #ea3556;
 	color: #fff;
 	border-radius: 0;
+}
+
+@media screen and (min-width: 50em) {
+	input[type="text"], input[type="email"], input[type="url"], input[type="number"],
+	textarea,
+	select {
+		font-size: 1em;
+	}
+	.form__control-group--toggle input {
+		margin-top: 0.5em;
+	}
 }
