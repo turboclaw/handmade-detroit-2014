@@ -3,3 +3,27 @@
 .article__title {
 	text-align: center;
 }
+.article__body {
+	margin-bottom: 1.5em;
+}
+.article__meta {
+	display: flex;
+	align-content: center;
+	color: rgba(9, 25, 59, 0.5);
+	border-top: 2px solid rgba(38, 37, 36, 0.125);
+	font-size: 0.75em;
+	text-transform: uppercase;
+	padding: 1em 0 0;
+}
+.article__meta__description {
+	margin: auto 1em auto 0;
+	width: 90%;
+}
+.article__meta__image {
+	overflow: hidden;
+	width: 10%;
+	border-radius: 10em;
+}
+.article__meta__image img {
+	display: block;
+}
