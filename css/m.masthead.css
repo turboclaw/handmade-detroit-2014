@@ -1,5 +1,6 @@
 .masthead {
-	background: #ea3556 url(http://farm4.staticflickr.com/3786/12289960065_33205d9732_h.jpg) no-repeat 50% 50%;
+	background: #ea3556 url(../img/banners/9.JPG) no-repeat 50% 50%;
+	background-size: cover;
 }
 .masthead__logo {
 	width: 100%;

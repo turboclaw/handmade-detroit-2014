@@ -2,6 +2,7 @@ main {
 	margin: 3em auto;
 	width: 82.5%;
 	font-size: 0.875em;
+	position: relative;
 }
 
 [role="contentinfo"] {

@@ -2,7 +2,9 @@
 	border-top: 0.5em solid rgba(38, 37, 36, 0.125);
 	margin-top: 3em;
 }
-
+.comments__title {
+	margin-bottom: 0.21875em;
+}
 .comment-list {
 	list-style: none;
 }
