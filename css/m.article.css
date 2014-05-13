@@ -3,6 +3,10 @@
 .article__title {
 	text-align: center;
 }
+.article__title a:not(:hover) {
+	background: transparent;
+	color: inherit;
+}
 .article__body {
 	margin-bottom: 1.5em;
 }
@@ -13,6 +17,7 @@
 .article__meta__image img {
 	display: block;
 	margin: auto;
+	width: 100%;
 }
 .article--full .article__meta {
 	display: -webkit-flex;
