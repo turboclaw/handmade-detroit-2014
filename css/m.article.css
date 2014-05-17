@@ -13,6 +13,7 @@
 .article__meta__image {
 	overflow: hidden;
 	border-radius: 10em;
+	background-color: #ea3556;
 }
 .article__meta__image img {
 	display: block;
@@ -63,6 +64,17 @@
 .article--excerpt .article__title {
 	font-size: 2em;
 	text-align: left;
+}
+
+.pagination {
+	border-top: 1px solid rgba(38, 37, 36, 0.125);
+	padding-top: 0.5em;
+}
+.pagination__previous {
+	float: right;
+}
+.pagination__next {
+	float: left;
 }
 
 @media screen and (min-width: 50em) {
