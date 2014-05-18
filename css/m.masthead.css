@@ -50,8 +50,16 @@
 		display: flex;
 		height: 12em;
 	}
+	.hd-home .masthead {
+		height: 6.5625em;
+		background: #262524;
+	}
 	.masthead__logo {
 		width: 63%;
+	}
+	.hd-home .masthead__logo {
+		width: 25%;
+		margin-left: 5%;
 	}
 	.masthead__nav {
 		display: -webkit-flex;
@@ -59,6 +67,9 @@
 		width: 33%;
 		padding: 0;
 		font-size: 1.75em;
+	}
+	.hd-home .masthead__nav {
+		width: 65%;
 	}
 	.masthead__nav ul {
 		display: -webkit-flex;

@@ -10,8 +10,15 @@
 }
 .panel__title {
     font-size: 6em;
+    line-height: 1;
 }
 .panel__header {
 }
-.panel__body {
+.panel__body > span {
+	background-color: rgba(234, 53, 86, 0.75);
+	box-shadow: 0 0 0 3px rgba(234, 53, 86, 0.75);
+}
+
+.panel--ducf {
+	background-image: url(http://farm4.staticflickr.com/3801/12290160123_c917164e71_h.jpg);
 }
