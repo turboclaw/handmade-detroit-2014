@@ -4,6 +4,10 @@ main {
 	font-size: 0.875em;
 	position: relative;
 }
+.hd-home main {
+	width: 100%;
+	margin: 0;
+}
 
 [role="contentinfo"] {
 	padding-left: 5%;

@@ -1,0 +1,17 @@
+.panel {
+    padding: 2em 10%;
+    text-align: center;
+    background: #ea3556 url(http://lorempixel.com/1200/600) no-repeat 50% 50%/cover;
+    color: #fff;
+    min-height: 15em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.panel__title {
+    font-size: 6em;
+}
+.panel__header {
+}
+.panel__body {
+}
