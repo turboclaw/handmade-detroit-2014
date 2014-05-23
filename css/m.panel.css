@@ -21,6 +21,18 @@
 }
 .panel__header {
 }
+.panel__tagline {
+	margin-bottom: 0;
+	font-size: 0.75em;
+	font-style: italic;
+	text-transform: uppercase;
+}
+.panel__tagline:before,
+.panel__tagline:after {
+	content: "\2014\2014\2014\2014\2014";
+	margin: 0 1em;
+	letter-spacing: -2px;
+}
 .panel__body > span {
 	background-color: rgba(234, 53, 86, 0.75);
 	box-shadow: 0 0 0 3px rgba(234, 53, 86, 0.75);
