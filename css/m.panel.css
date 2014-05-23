@@ -1,7 +1,7 @@
 .panel {
     padding: 2em 10%;
     text-align: center;
-    background: #ea3556 url(http://lorempixel.com/1200/600) no-repeat 50% 50%/cover;
+    background: #ea3556 url(../img/banners/7.JPG) no-repeat 50% 50%/cover;
     color: #fff;
     min-height: 15em;
     display: flex;
@@ -32,12 +32,20 @@
 	content: "\2014\2014\2014\2014\2014";
 	margin: 0 1em;
 	letter-spacing: -2px;
+	opacity: 0.75;
 }
 .panel__body > span {
 	background-color: rgba(234, 53, 86, 0.75);
 	box-shadow: 0 0 0 3px rgba(234, 53, 86, 0.75);
 }
 
+.panel--calendar {
+	padding: 0.25em 1em;
+	min-height: 0;
+}
+.panel--calendar + .panel {
+	padding-top: 5.75em;
+}
 .panel--ducf {
 	background-image: url(http://farm4.staticflickr.com/3801/12290160123_c917164e71_h.jpg);
 }
