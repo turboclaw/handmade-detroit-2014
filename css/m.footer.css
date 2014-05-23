@@ -2,14 +2,13 @@
 	padding-top: 2em;
 	padding-bottom: 2em;
 	background: #e0d8d5;
+	text-align: center;
 }
 
 [role="contentinfo"] small {
-	float: left;
 	line-height: 3em;
 }
 .social {
-	float: right;
 	list-style: none;
 	font-size: 1.5em;
 }
@@ -24,4 +23,17 @@
 }
 .social a[data-icon] span {
 	display: none;
+}
+
+@media screen and (min-width: 50em) {
+	[role="contentinfo"] {
+		text-align: left;
+	}
+
+	[role="contentinfo"] small {
+		float: left;
+	}
+	.social {
+		float: right;
+	}
 }

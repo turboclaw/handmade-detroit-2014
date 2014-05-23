@@ -9,8 +9,15 @@
     flex-direction: column;
 }
 .panel__title {
-    font-size: 6em;
+    font-size: 3.5em;
     line-height: 1;
+}
+.panel__title a {
+	background: transparent;
+	color: #fff;
+}
+.panel__title a:hover, .panel__title a:active, .panel__title a:focus {
+	color: #ea3556;
 }
 .panel__header {
 }
@@ -21,4 +28,10 @@
 
 .panel--ducf {
 	background-image: url(http://farm4.staticflickr.com/3801/12290160123_c917164e71_h.jpg);
+}
+
+@media screen and (min-width: 50em) {
+	.panel__title {
+	    font-size: 6em;
+	}
 }
