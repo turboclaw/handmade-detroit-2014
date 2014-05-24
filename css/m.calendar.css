@@ -39,8 +39,7 @@
 .calendar__event date .day {
 	display: block;
 	padding: 0 0.125em;
-	font-family: "DINCond-Bold";
-	font-size: 1.5em;
+	font: 1.5em "DIN Condensed Bold", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
 	border-radius: 2em;
 	border: 1px solid;
 	line-height: 1.5;
@@ -52,27 +51,4 @@
 }
 .calendar__event__location {
 	font-size: 0.75em;
-}
-
-.calendar--large {
-	padding: 0;
-	margin-top: -1em;
-}
-.calendar--large .calendar__event {
-	margin-bottom: 1.5em;
-	padding-left: 6.5em;
-}
-.calendar--large .calendar__event__title {
-	font-size: 2em;
-	margin-top: 0;
-}
-.calendar--large .calendar__event date {
-	width: 5em;
-	margin-left: -6.5em;
-}
-.calendar--large .calendar__event date .month {
-	font-size: 1.5em;
-}
-.calendar--large .calendar__event date .day {
-	font-size: 3.5em;
 }

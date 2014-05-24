@@ -39,31 +39,63 @@
 	width: 20%;
 }
 
-.article--excerpt {
+.article--list-item {
+	display: -webkit-flex;
 	display: flex;
+	-webkit-align-items: flex-start;
 	align-items: flex-start;
 }
-.article--excerpt .article__meta {
+.article--list-item .article__meta {
 	width: 20%;
 	margin-right: 2em;
 	position: relative;
 }
-.article--excerpt .article__meta__description {
+.article--list-item .article__meta__description {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	font: 2em "DIN Condensed Bold", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+	font: 1.55em "DIN Condensed Bold", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
 	color: #fff;
 	opacity: 0.75;
+	text-align: center;
 }
-.article--excerpt .article__content {
+.article--list-item .article__content {
 	width: 80%;
 }
-.article--excerpt .article__title {
+.article--list-item .article__title {
 	font-size: 2em;
 	text-align: left;
+}
+
+.article--calendar-event .article__meta__description {
+	width: 100%;
+	top: 0;
+	left: 0;
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+	color: #444;
+	opacity: 1;
+}
+.article--calendar-event .day {
+    display: block;
+    font-size: 0.75em;
+    border: 2px solid;
+    border-radius: 10em;
+    padding: 30% 0;
+}
+.article--calendar-event .month {
+	font-family: "DIN Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 0.5em;
+    text-transform: uppercase;
+}
+.article--calendar-event .article__title {
+	margin-bottom: 0;
+}
+.article--calendar-event .calendar__meta {
+	font-size: 0.875em;
+	margin-bottom: 1.5em;
 }
 
 .pagination {
@@ -85,10 +117,10 @@
 		width: 10%;
 	}
 
-	.article--excerpt .article__meta__description {
+	.article--list-item .article__meta__description {
 		font-size: 3.5em;
 	}
-	.article--excerpt .article__title {
+	.article--list-item .article__title {
 		font-size: 3em;
 	}
 }
