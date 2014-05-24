@@ -29,7 +29,7 @@
 }
 .panel__tagline:before,
 .panel__tagline:after {
-	content: "\2014\2014\2014\2014\2014";
+	content: "\2014\2014\2014";
 	margin: 0 1em;
 	letter-spacing: -2px;
 	opacity: 0.75;
@@ -53,5 +53,9 @@
 @media screen and (min-width: 50em) {
 	.panel__title {
 	    font-size: 6em;
+	}
+	.panel__tagline:before,
+	.panel__tagline:after {
+		content: "\2014\2014\2014\2014\2014";
 	}
 }
