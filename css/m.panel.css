@@ -13,49 +13,49 @@
     line-height: 1;
 }
 .panel__title a {
-	background: transparent;
-	color: #fff;
+    background: transparent;
+    color: #fff;
 }
 .panel__title a:hover, .panel__title a:active, .panel__title a:focus {
-	color: #ea3556;
+    color: #ea3556;
 }
 .panel__header {
 }
 .panel__tagline {
-	margin-bottom: 0;
-	font-size: 0.75em;
-	font-style: italic;
-	text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 0.75em;
+    font-style: italic;
+    text-transform: uppercase;
 }
 .panel__tagline:before,
 .panel__tagline:after {
-	content: "\2014\2014\2014";
-	margin: 0 1em;
-	letter-spacing: -2px;
-	opacity: 0.75;
+    content: "\2014\2014\2014";
+    margin: 0 1em;
+    letter-spacing: -2px;
+    opacity: 0.75;
 }
 .panel__body > span {
-	background-color: rgba(234, 53, 86, 0.75);
-	box-shadow: 0 0 0 3px rgba(234, 53, 86, 0.75);
+    background-color: rgba(234, 53, 86, 0.75);
+    box-shadow: 0 0 0 3px rgba(234, 53, 86, 0.75);
 }
 
 .panel--calendar {
-	padding: 0.25em 1em;
-	min-height: 0;
+    padding: 0.25em 1em;
+    min-height: 0;
 }
 .panel--calendar + .panel {
-	padding-top: 5.75em;
+    padding-top: 5.75em;
 }
 .panel--ducf {
-	background-image: url(http://farm4.staticflickr.com/3801/12290160123_c917164e71_h.jpg);
+    background-image: url(http://farm4.staticflickr.com/3801/12290160123_c917164e71_h.jpg);
 }
 
 @media screen and (min-width: 50em) {
-	.panel__title {
-	    font-size: 6em;
-	}
-	.panel__tagline:before,
-	.panel__tagline:after {
-		content: "\2014\2014\2014\2014\2014";
-	}
+    .panel__title {
+        font-size: 6em;
+    }
+    .panel__tagline:before,
+    .panel__tagline:after {
+        content: "\2014\2014\2014\2014\2014";
+    }
 }

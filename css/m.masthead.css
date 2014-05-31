@@ -1,88 +1,88 @@
 .masthead {
-	background: #ea3556 url(../img/banners/9.JPG) no-repeat 50% 50%;
-	background-size: cover;
-	position: relative;
+    background: #ea3556 url(../img/banners/9.JPG) no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
 }
 .hd-home .masthead {
-	background: #262524;
+    background: #262524;
 }
 .masthead__logo {
-	width: 100%;
-	position: relative;
-	margin: 0 -4% 0 -3%;
+    width: 100%;
+    position: relative;
+    margin: 0 -4% 0 -3%;
 }
 .masthead__logo a {
-	display: block;
-	margin-top: -2.5%;
-	background-color: transparent !important;
-	display: block;
+    display: block;
+    margin-top: -2.5%;
+    background-color: transparent !important;
+    display: block;
 }
 .masthead__logo img {
-	display: block;
-	margin: 0 auto;
-	width: 800px;
+    display: block;
+    margin: 0 auto;
+    width: 800px;
 }
 .masthead__nav {
-	position: relative;
-	padding: 0.75em 0 0.5em;
-	font: bold 1.25em "DIN Condensed Bold", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
-	text-transform: uppercase;
+    position: relative;
+    padding: 0.75em 0 0.5em;
+    font: bold 1.25em "DIN Condensed Bold", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
 }
 .masthead__nav ul {
-	width: 100%;
-	list-style: none;
-	text-align: center;
+    width: 100%;
+    list-style: none;
+    text-align: center;
 }
 .masthead__nav li {
-	margin-left: 0.892857143em;
-	display: inline-block;
+    margin-left: 0.892857143em;
+    display: inline-block;
 }
 .masthead__nav li:first-child {
-	margin-left: 0;
+    margin-left: 0;
 }
 .masthead__nav a:link, .masthead__nav a:visited {
-	background-color: transparent;
-	color: #fff;
+    background-color: transparent;
+    color: #fff;
 }
 .masthead__nav a:hover, .masthead__nav a:active, .masthead__nav a:focus {
-	color: #ea3556;
+    color: #ea3556;
 }
 
 @media screen and (min-width: 50em) {
-	.masthead {
-		display: -webkit-flex;
-		display: flex;
-		height: 12em;
-	}
-	.hd-home .masthead {
-		height: 6.5625em;
-		z-index: 1;
-	}
-	.masthead__logo {
-		width: 63%;
-	}
-	.hd-home .masthead__logo {
-		width: 25%;
-		margin-left: 5%;
-	}
-	.masthead__nav {
-		display: -webkit-flex;
-		display: flex;
-		width: 33%;
-		padding: 0;
-		font-size: 1.75em;
-	}
-	.hd-home .masthead__nav {
-		width: 65%;
-	}
-	.masthead__nav ul {
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-flow: row wrap;
-		flex-flow: row wrap;
-		-webkit-justify-content: flex-end;
-		justify-content: flex-end;
-		-webkit-align-content: center;
-		align-content: center;
-	}
+    .masthead {
+        display: -webkit-flex;
+        display: flex;
+        height: 12em;
+    }
+    .hd-home .masthead {
+        height: 6.5625em;
+        z-index: 1;
+    }
+    .masthead__logo {
+        width: 63%;
+    }
+    .hd-home .masthead__logo {
+        width: 25%;
+        margin-left: 5%;
+    }
+    .masthead__nav {
+        display: -webkit-flex;
+        display: flex;
+        width: 33%;
+        padding: 0;
+        font-size: 1.75em;
+    }
+    .hd-home .masthead__nav {
+        width: 65%;
+    }
+    .masthead__nav ul {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+        -webkit-align-content: center;
+        align-content: center;
+    }
 }

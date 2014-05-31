@@ -1,37 +1,36 @@
 [data-icon]:before {
-  font-family: "HD Social";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin-right: 0.333333333em;
+    font-family: "HD Social";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 0.333333333em;
 }
-
 [data-icon="twitter"]:before {
-  content: "\e601";
+    content: "\e601";
 }
 [data-icon="facebook"]:before {
-  content: "\e602";
+    content: "\e602";
 }
 [data-icon="flickr"]:before {
-  content: "\e603";
+    content: "\e603";
 }
 [data-icon="etsy"]:before {
-  content: "\e600";
+    content: "\e600";
 }
 [data-icon="instagram"]:before {
-  content: "\e604";
+    content: "\e604";
 }
 [data-icon="pinterest"]:before {
-  content: "\e605";
+    content: "\e605";
 }
 [data-icon="rss"]:before {
-  content: "\e607";
+    content: "\e607";
 }
 [data-icon="michigan"]:before {
-  content: "\e606";
+    content: "\e606";
 }

@@ -1,42 +1,42 @@
 .comments {
-	border-top: 0.5em solid rgba(38, 37, 36, 0.125);
-	margin-top: 3em;
+    border-top: 0.5em solid rgba(38, 37, 36, 0.125);
+    margin-top: 3em;
 }
 .comments__title {
-	margin-bottom: 0.21875em;
+    margin-bottom: 0.21875em;
 }
 .comment-list {
-	list-style: none;
+    list-style: none;
 }
 .media--comment {
-	padding: 0.5em;
+    padding: 0.5em;
 }
 .even .media--comment {
-	background-color: rgba(168, 168, 168, 0.125);
+    background-color: rgba(168, 168, 168, 0.125);
 }
 .media--comment .media__footer {
-	width: 20%;
-	float: left;
-	font-size: 0.857142857em;
-	text-align: center;
+    width: 20%;
+    float: left;
+    font-size: 0.857142857em;
+    text-align: center;
 }
 .media--comment .media__image {
-	margin-bottom: 0.5em;
-	border-radius: 10em;
-	overflow: hidden;
+    margin-bottom: 0.5em;
+    border-radius: 10em;
+    overflow: hidden;
 }
 .media--comment .media__body {
-	width: 75%;
-	float: left;
-	margin-left: 5%;
+    width: 75%;
+    float: left;
+    margin-left: 5%;
 }
 .media--comment .media__image img {
-	display: block;
+    display: block;
 }
 .media__comment-meta {
-	display: none;
-	opacity: 0.5;
+    display: none;
+    opacity: 0.5;
 }
 .media--comment:hover .media__comment-meta {
-	display: inherit;
+    display: inherit;
 }

@@ -1,39 +1,39 @@
 [role="contentinfo"] {
-	padding-top: 2em;
-	padding-bottom: 2em;
-	background: #e0d8d5;
-	text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: #e0d8d5;
+    text-align: center;
 }
 
 [role="contentinfo"] small {
-	line-height: 3em;
+    line-height: 3em;
 }
 .social {
-	list-style: none;
-	font-size: 1.5em;
+    list-style: none;
+    font-size: 1.5em;
 }
 .social li {
-	display: inline;
+    display: inline;
 }
 .social a {
-	background-color: transparent;
+    background-color: transparent;
 }
 .social a:hover, .social a:active, .social a:focus {
-	color: #444;
+    color: #444;
 }
 .social a[data-icon] span {
-	display: none;
+    display: none;
 }
 
 @media screen and (min-width: 50em) {
-	[role="contentinfo"] {
-		text-align: left;
-	}
+    [role="contentinfo"] {
+        text-align: left;
+    }
 
-	[role="contentinfo"] small {
-		float: left;
-	}
-	.social {
-		float: right;
-	}
+    [role="contentinfo"] small {
+        float: left;
+    }
+    .social {
+        float: right;
+    }
 }

@@ -2,71 +2,71 @@ label,
 input[type="text"], input[type="email"], input[type="url"], input[type="number"],
 textarea,
 select {
-	display: block;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 100%;
-	margin-bottom: 0.25em;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 0.25em;
 }
 input[type="text"], input[type="email"], input[type="url"], input[type="number"],
 textarea {
-	-webkit-appearance: none;
+    -webkit-appearance: none;
 }
 input[type="text"], input[type="email"], input[type="url"], input[type="number"],
 textarea,
 select {
-	font: normal 16px/1.5 "DIN Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
-	border: 1px solid rgba(68, 68, 68, 0.5);
-	background-color: rgba(255, 255, 255, 0.5);
-	padding: 0.125em 0.25em;
-	transition: all 0.25s ease-out;
-	border-radius: 0;
-	box-shadow: none;
+    font: normal 16px/1.5 "DIN Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    border: 1px solid rgba(68, 68, 68, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.125em 0.25em;
+    transition: all 0.25s ease-out;
+    border-radius: 0;
+    box-shadow: none;
 }
 input:focus,
 textarea:focus,
 select:focus {
-	border-color: #ea3556;
-	outline: 0;
+    border-color: #ea3556;
+    outline: 0;
 }
 label:last-child,
 input:last-child,
 textarea:last-child,
 select:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .form__control-group {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 .form__control-group--toggle {
-	padding-left: 1.5em;
+    padding-left: 1.5em;
 }
 .form__control-group--toggle input {
-	float: left;
-	margin: 0.375em 0 0 -1.5em;
+    float: left;
+    margin: 0.375em 0 0 -1.5em;
 }
 
 button,
 input[type="submit"],
 .button {
-	display: inline-block;
-	border: 0;
-	font: bold 1.5em "DIN Condensed Bold", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
-	text-transform: uppercase;
-	padding: 0.25em 0.5em;
-	background-color: #ea3556;
-	color: #fff;
-	border-radius: 0;
+    display: inline-block;
+    border: 0;
+    font: bold 1.5em "DIN Condensed Bold", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 0.25em 0.5em;
+    background-color: #ea3556;
+    color: #fff;
+    border-radius: 0;
 }
 
 @media screen and (min-width: 50em) {
-	input[type="text"], input[type="email"], input[type="url"], input[type="number"],
-	textarea,
-	select {
-		font-size: 1em;
-	}
-	.form__control-group--toggle input {
-		margin-top: 0.5em;
-	}
+    input[type="text"], input[type="email"], input[type="url"], input[type="number"],
+    textarea,
+    select {
+        font-size: 1em;
+    }
+    .form__control-group--toggle input {
+        margin-top: 0.5em;
+    }
 }
