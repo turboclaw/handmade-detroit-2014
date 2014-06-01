@@ -44,6 +44,7 @@
     display: flex;
     -webkit-align-items: flex-start;
     align-items: flex-start;
+    margin-bottom: 1.5em;
 }
 .article--list-item .article__meta {
     width: 20%;
@@ -67,6 +68,9 @@
 .article--list-item .article__title {
     font-size: 2em;
     text-align: left;
+}
+.article--list-item .article__body {
+    margin-bottom: 0;
 }
 
 .article--calendar-event .article__meta__description {

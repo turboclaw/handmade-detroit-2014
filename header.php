@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/2014-src.css" />
         <?php wp_head(); ?>
     </head>
-    <body class="<?php body_class(); ?>">
+    <body <?php body_class(); ?>>
         <header role="banner" class="masthead">
             <h1 class="masthead__logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/handmade-detroit.svg" alt="Handmade Detroit" /></a></h1>
             <nav role="navigation" class="masthead__nav">
