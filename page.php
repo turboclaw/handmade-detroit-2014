@@ -3,7 +3,7 @@
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class( "article article--full" ); ?>>
         <header class="article__header">
-            <h1 class="article__title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+            <h1 class="article__title"><?php the_title(); ?></h1>
         </header>
         <div class="article__body cf">
         <?php the_content(); ?>
