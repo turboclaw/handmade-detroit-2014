@@ -18,6 +18,11 @@
         </footer>
     </article>
 
+    <aside role="complementary" id="comments" class="comments">
+    <?php comments_template( '', true ); ?>
+    </aside>
+
+
     <?php endwhile; ?>
     <?php else : ?>
     <article id="post-not-found" class="article">

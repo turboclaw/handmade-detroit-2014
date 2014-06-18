@@ -20,4 +20,39 @@ function my_show_extra_profile_fields( $user ) { ?>
 	</table>
 <?php }
 
+if ( ! function_exists( 'hd_comment' ) ) :
+function hd_comment( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment;
+	switch ( $comment->comment_type ) :
+		case '' :
+	?>
+	<li <?php comment_class("comment-thread"); ?> id="li-comment-<?php comment_ID(); ?>">
+
+		<article class="media media--comment cf" id="comment-<?php comment_ID(); ?>">
+		    <footer class="media__footer">
+		        <div class="media__image">
+		            <?php echo get_avatar( $comment, 200 ); ?>
+		        </div>
+		        <cite class="fn"><?php comment_author_link(); ?></cite> <span class="media__comment-meta"><?php comment_date('m/d/Y'); ?> at <?php comment_time(); ?></span>
+		    </footer>
+
+		    <div class="media__body">
+		    	<?php comment_text(); ?>
+		    	<small><?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?> to this comment</small>
+		    </div>
+		</article>
+
+	<?php
+			break;
+		case 'pingback'  :
+		case 'trackback' :
+	?>
+	<li class="post pingback">
+		<p><?php _e( 'Pingback:', 'reware' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __('(Edit)', 'reware'), ' ' ); ?></p>
+	<?php
+			break;
+	endswitch;
+}
+endif;
+
 ?>
