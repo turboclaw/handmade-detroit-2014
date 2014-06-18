@@ -59,6 +59,12 @@
     </article>
 
     <?php endwhile; ?>
+    <nav class="pagination cf">
+        <ul>
+            <li class="pagination__link pagination__previous"><?php next_posts_link('Older Posts'); ?></li>
+            <li class="pagination__link pagination__next"><?php previous_posts_link('Newer Posts'); ?></li>            
+        </ul>
+    </nav>
     <?php else : ?>
     <article id="post-not-found" class="hentry cf">
         uh
