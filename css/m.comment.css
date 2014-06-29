@@ -34,13 +34,11 @@
     display: block;
 }
 .media__comment-meta {
-    display: none;
     opacity: 0.5;
-}
-.media--comment:hover .media__comment-meta {
-    display: inherit;
+    float: right;
 }
 
 .comments .children {
     margin-left: 5em;
+    list-style: none;
 }

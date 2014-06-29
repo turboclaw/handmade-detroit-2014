@@ -33,11 +33,12 @@ function hd_comment( $comment, $args, $depth ) {
 		        <div class="media__image">
 		            <?php echo get_avatar( $comment, 200 ); ?>
 		        </div>
-		        <cite class="fn"><?php comment_author_link(); ?></cite> <span class="media__comment-meta"><?php comment_date('m/d/Y'); ?> at <?php comment_time(); ?></span>
+		        <cite class="fn"><?php comment_author_link(); ?></cite>
 		    </footer>
 
 		    <div class="media__body">
 		    	<?php comment_text(); ?>
+		    	<span class="media__comment-meta"><?php comment_date('m/d/Y'); ?> at <?php comment_time(); ?></span>
 		    	<small><?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?> to this comment</small>
 		    </div>
 		</article>
