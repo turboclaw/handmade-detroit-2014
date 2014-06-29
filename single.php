@@ -13,7 +13,7 @@
                 by <?php the_author_posts_link(); ?> on <a href="<?php the_time('/Y/m/'); ?>"><?php the_time('F'); ?></a> <?php the_time('j, Y'); ?> // Categories: <?php the_category(', '); ?><?php comments_number( '', ' // 1 Comment', ' // % Comments' ); ?>
             </div>
             <div class="article__meta__image">
-                <img src="http://lorempixel.com/200/200" alt="Avatar" />
+                <?php echo get_avatar( get_the_author_meta( 'ID' ), 200 ); ?>
             </div>
         </footer>
     </article>
