@@ -16,10 +16,10 @@
             <h1 class="masthead__logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/handmade-detroit.svg" alt="Handmade Detroit" /></a></h1>
             <nav role="navigation" class="masthead__nav">
                 <ul>
-                    <li><a href="#">D.U.C.F.</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="http://detroiturbancraftfair.com">D.U.C.F.</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
                 </ul>
             </nav>
         </header>
