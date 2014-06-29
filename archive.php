@@ -14,9 +14,37 @@
         global $post;
         $author_id = $post->post_author;
     ?>
-        <h1 class="archive-title">
-            Posts By: <?php the_author_meta('display_name', $author_id); ?>
-        </h1>
+
+        <?php if(is_author('amy')){ ?>
+            <?php $post_id = $wpdb->get_var("SELECT id FROM wp_posts WHERE post_name='amy-cronkite' LIMIT 1");
+            $requested_post = get_post($post_id); ?>
+        <?php }elseif(is_author('bethany')){ ?>
+            <?php $post_id = $wpdb->get_var("SELECT id FROM wp_posts WHERE post_name='bethany-nixon' LIMIT 1");
+            $requested_post = get_post($post_id); ?>
+        <?php }elseif(is_author('carey')){ ?>
+            <?php $post_id = $wpdb->get_var("SELECT id FROM wp_posts WHERE post_name='carey-gustafson' LIMIT 1");
+            $requested_post = get_post($post_id); ?>
+        <?php }elseif(is_author('lish')){ ?>
+            <?php $post_id = $wpdb->get_var("SELECT id FROM wp_posts WHERE post_name='lish-dorset' LIMIT 1");
+            $requested_post = get_post($post_id); ?>
+        <?php } ?>
+        
+        <article class="article article--list-item article--author-profile">
+            <footer class="article__meta cf">
+                <div class="article__meta__image">
+                    <?php echo get_avatar( get_the_author_meta( 'ID' ), 200 ); ?>
+                </div>
+            </footer>
+            <div class="article__content">
+                <header class="article__header">
+                    <h1 class="article__title"><?php echo $requested_post->post_title; ?></h1>
+                </header>
+                <div class="article__body cf">
+                    <?php echo $requested_post->post_content; ?>
+                </div>
+            </div>
+        </article>
+
     <?php } elseif (is_day()) { ?>
         <h1 class="archive-title">
             Daily Archives: <?php the_time('l, F j, Y'); ?>
