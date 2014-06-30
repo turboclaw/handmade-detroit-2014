@@ -4,7 +4,7 @@ main {
     font-size: 0.875em;
     position: relative;
 }
-.hd-home main {
+body.home main {
     width: 100%;
     margin: 0;
 }
