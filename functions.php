@@ -66,4 +66,156 @@ function new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
+function hd_widgets_init() {
+	register_sidebar( array(
+		'name' => 'Front Page Panels',
+		'id' => 'front_panels',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+}
+add_action( 'widgets_init', 'hd_widgets_init' );
+
+// Latest blog post widget
+class latest_blog_post extends WP_Widget {
+	function latest_blog_post() {
+		$widget_ops = array(
+			'classname' => 'latest_blog_post',
+			'description' => 'Latest blog post front page panel'
+		);
+
+		$this->WP_Widget(
+			'latest_blog_post',
+			'Latest Blog Post Panel',
+			$widget_ops
+		);
+	}
+
+	function widget($args, $instance) {
+		extract($args, EXTR_SKIP);
+		echo $before_widget;
+
+		wp_reset_query();
+		query_posts( 'post_type=default_panels&orderby=rand&posts_per_page=1' );
+		while ( have_posts() ) : the_post();
+		$post_thumbnail_url = get_field("image");
+		endwhile;
+
+		wp_reset_query();
+		query_posts( 'posts_per_page=1' );
+		while ( have_posts() ) : the_post(); ?>
+		<?php if ( has_post_thumbnail() ) { 
+			$post_thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		}?>
+		<section class="panel panel--blog" style="background-image: url(<?php echo $post_thumbnail_url; ?>)">
+		    <div class="panel__header">
+		        <p class="panel__tagline">The latest from the <a href="/blog/">HD blog</a></p>
+		        <h1 class="panel__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+		    </div>
+		    <div class="panel__body">
+		        <span><?php $unwrapped_excerpt = get_the_excerpt(); echo $unwrapped_excerpt; ?></span>
+		    </div>
+		</section>
+		<?php endwhile;
+		wp_reset_query();
+		
+		echo $after_widget;
+	}
+}
+
+add_action(
+	'widgets_init',
+	create_function('','return register_widget("latest_blog_post");')
+);
+
+class ducf_panel extends WP_Widget {
+	function ducf_panel() {
+		$widget_ops = array(
+			'classname' => 'ducf_panel',
+			'description' => 'DUCF front page panel'
+		);
+
+		$this->WP_Widget(
+			'ducf_panel',
+			'DUCF Panel',
+			$widget_ops
+		);
+	}
+
+	function widget($args, $instance) {
+		extract($args, EXTR_SKIP);
+		echo $before_widget;
+
+		wp_reset_query();
+		query_posts( 'post_type=front_page_panels&posts_per_page=1&name=detroit-urban-craft-fair' );
+		while ( have_posts() ) : the_post(); ?>
+		<?php if ( has_post_thumbnail() ) { 
+			$post_thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		}?>
+		<section class="panel panel--ducf" style="background-image: url(<?php echo $post_thumbnail_url; ?>)">
+		    <div class="panel__header">
+		        <h1 class="panel__title"><a href="http://detroiturbancraftfair.com"><?php the_title(); ?></a></h1>
+		    </div>
+		    <div class="panel__body">
+		        <span><?php $unwrapped_excerpt = get_the_excerpt(); echo $unwrapped_excerpt; ?></span>
+		    </div>
+		</section>
+		<?php endwhile;
+		wp_reset_query();
+
+		echo $after_widget;
+	}
+}
+
+add_action(
+	'widgets_init',
+	create_function('','return register_widget("ducf_panel");')
+);
+
+class about_panel extends WP_Widget {
+	function about_panel() {
+		$widget_ops = array(
+			'classname' => 'about_panel',
+			'description' => 'DUCF front page panel'
+		);
+
+		$this->WP_Widget(
+			'about_panel',
+			'About HD Panel',
+			$widget_ops
+		);
+	}
+
+	function widget($args, $instance) {
+		extract($args, EXTR_SKIP);
+		echo $before_widget;
+
+		wp_reset_query();
+		query_posts( 'post_type=front_page_panels&posts_per_page=1&name=about-handmade-detroit' );
+		while ( have_posts() ) : the_post(); ?>
+		<?php if ( has_post_thumbnail() ) { 
+			$post_thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		}?>
+		<section class="panel panel--about" style="background-image: url(<?php echo $post_thumbnail_url; ?>)">
+		    <div class="panel__header">
+		        <h1 class="panel__title"><a href="/about/"><?php the_title(); ?></a></h1>
+		    </div>
+		    <div class="panel__body">
+		        <span><?php $unwrapped_excerpt = get_the_excerpt(); echo $unwrapped_excerpt; ?></span>
+		    </div>
+		</section>
+		<?php endwhile;
+		wp_reset_query();
+
+		echo $after_widget;
+	}
+}
+
+add_action(
+	'widgets_init',
+	create_function('','return register_widget("about_panel");')
+);
+
 ?>
