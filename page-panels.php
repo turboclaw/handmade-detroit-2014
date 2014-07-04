@@ -7,68 +7,49 @@ Template Name: Page - Panels
 <main role="main">
 	<section class="panel panel--calendar calendar">
 	    <ol>
+		<?php wp_reset_query();
+		query_posts( 'post_type=event&order=ASC&orderby=menu_order' );
+		while ( have_posts() ) : the_post(); ?>
 	        <li class="calendar__event">
-	            <a href="#">
+	            <a href="<?php the_permalink(); ?>">
 	            <date>
-	            <span class="month">May</span>
-	            <span class="day">3</span>
+	            <span class="month"><?php the_field("date_month"); ?></span>
+	            <span class="day"><?php the_field("date_day"); ?></span>
 	            </date>
-	            <h4 class="calendar__event__title">Flint Handmade Spring Craft Market</h4>
-	            <div class="calendar__event__location">Flint, MI</div>
+	            <h4 class="calendar__event__title"><?php the_title(); ?></h4>
+	            <div class="calendar__event__location"><?php the_field("location"); ?></div>
 	            </a>
 	        </li>
-	        <li class="calendar__event calendar__event--highlight">
-	            <a href="#">
-	            <date>
-	            <span class="month">May</span>
-	            <span class="day">10</span>
-	            </date>
-	            <h4 class="calendar__event__title">Small Craft</h4>
-	            <div class="calendar__event__location">Detroit, MI</div>
-	            </a>
-	        </li>
-	        <li class="calendar__event">
-	            <a href="#">
-	            <date>
-	            <span class="month">May</span>
-	            <span class="day">16-17</span>
-	            </date>
-	            <h4 class="calendar__event__title">Spring Fabric Sale</h4>
-	            <div class="calendar__event__location">Detroit, MI</div>
-	            </a>
-	        </li>
-	        <li class="calendar__event">
-	            <a href="#">
-	            <date>
-	            <span class="month">Jun</span>
-	            <span class="day">7</span>
-	            </date>
-	            <h4 class="calendar__event__title">Yarn Bomb the Garden</h4>
-	            <div class="calendar__event__location">Ann Arbor, MI</div>
-	            </a>
-	        </li>
-	        <li class="calendar__event">
-	            <a href="#">
-	            <date>
-	            <span class="month">Jun</span>
-	            <span class="day">14</span>
-	            </date>
-	            <h4 class="calendar__event__title">Berkley Art Bash</h4>
-	            <div class="calendar__event__location">Berkley, MI</div>
-	            </a>
-	        </li>
+		<?php endwhile;
+		wp_reset_query(); ?>
 	    </ol>
 	</section>
 
-	<section class="panel">
+	<?php 
+	wp_reset_query();
+	query_posts( 'post_type=default_panels&orderby=rand&posts_per_page=1' );
+	while ( have_posts() ) : the_post();
+	$post_thumbnail_url = get_field("image");
+	endwhile;
+
+	wp_reset_query();
+	query_posts( 'posts_per_page=1' );
+	while ( have_posts() ) : the_post(); ?>
+	<?php if ( has_post_thumbnail() ) { 
+		$post_thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+	}?>
+	<section class="panel panel--blog" style="background-image: url(<?php echo $post_thumbnail_url; ?>)">
 	    <div class="panel__header">
-	        <p class="panel__tagline">The latest from the <a href="#">HD blog</a></p>
-	        <h1 class="panel__title"><a href="#">The Craft Circle Keeps on Turning…</a></h1>
+	        <p class="panel__tagline">The latest from the <a href="/blog/">HD blog</a></p>
+	        <h1 class="panel__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 	    </div>
 	    <div class="panel__body">
-	        <span>Lots of changes and shakeups going on in the metro Detroit craft world lately, but one thing you can always count on is artists adapting and continuing on with new opportunities!</span>
+	        <span><?php $unwrapped_excerpt = get_the_excerpt(); echo $unwrapped_excerpt; ?></span>
 	    </div>
 	</section>
+	<?php endwhile;
+	wp_reset_query(); ?>
+
 	<section class="panel panel--ducf">
 	    <div class="panel__header">
 	        <h1 class="panel__title">Detroit Urban Craft Fair</h1>

@@ -1,7 +1,10 @@
 .panel {
     padding: 2em 10%;
     text-align: center;
-    background: #ea3556 url(../img/banners/7.JPG) no-repeat 50% 50%/cover;
+    background-color: #ea3556;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
     color: #fff;
     min-height: 15em;
     display: flex;
@@ -24,8 +27,9 @@
 .panel__tagline {
     margin-bottom: 0;
     font-size: 0.75em;
-    font-style: italic;
     text-transform: uppercase;
+    -webkit-transform: skew(-13deg);
+    transform: skew(-13deg);
 }
 .panel__tagline:before,
 .panel__tagline:after {

@@ -12,7 +12,17 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-        <header role="banner" class="masthead">
+        <?php 
+        if( !is_front_page() ) {
+            wp_reset_query();
+            query_posts( 'post_type=default_panels&orderby=rand&posts_per_page=1' );
+            while ( have_posts() ) : the_post();
+            $post_thumbnail_url = get_field("image");
+            endwhile;
+            wp_reset_query();
+        }
+        ?>
+        <header role="banner" class="masthead" style="background-image: url(<?php echo $post_thumbnail_url; ?>);">
             <h1 class="masthead__logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/handmade-detroit.svg" alt="Handmade Detroit" /></a></h1>
             <nav role="navigation" class="masthead__nav">
                 <ul>

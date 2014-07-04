@@ -56,4 +56,14 @@ function hd_comment( $comment, $args, $depth ) {
 }
 endif;
 
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more( $more ) {
+	return "&hellip;";
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
 ?>

@@ -1,5 +1,7 @@
 .masthead {
-    background: #ea3556 url(../img/banners/9.JPG) no-repeat 50% 50%;
+    background-color: #ea3556;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     background-size: cover;
     position: relative;
 }
