@@ -84,7 +84,7 @@ body.home .masthead {
         flex-flow: row wrap;
         -webkit-justify-content: flex-end;
         justify-content: flex-end;
-        -webkit-align-content: center;
-        align-content: center;
+        -webkit-align-items: center;
+        align-items: center;
     }
 }
