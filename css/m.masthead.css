@@ -37,6 +37,7 @@ body.home .masthead {
 }
 .masthead__nav li {
     margin-left: 0.892857143em;
+    margin-bottom: 0;
     display: inline-block;
 }
 .masthead__nav li:first-child {
