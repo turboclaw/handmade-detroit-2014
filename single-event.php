@@ -5,7 +5,7 @@
             <footer class="article__meta cf">
                 <date class="article__meta__description">
                 <span class="month"><?php the_field("date_month"); ?></span>
-                <span class="day"><?php the_field("date_day"); ?></span>
+                <span class="day"><span><?php the_field("date_day"); ?></span></span>
                 </date>
             </footer>
             <div class="article__content">
