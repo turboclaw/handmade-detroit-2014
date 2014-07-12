@@ -7,8 +7,11 @@
     background-size: cover;
     color: #fff;
     min-height: 15em;
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-flex-direction: column;
     flex-direction: column;
 }
 .panel__title {

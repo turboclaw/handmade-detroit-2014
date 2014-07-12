@@ -41,13 +41,18 @@
     line-height: 1;
 }
 .article--full .article__meta__image {
-    position: relative;
     width: 20%;
-    padding-bottom: 20%;
     background-color: transparent;
 }
-.article--full .article__meta__image img {
+.article--full .article__meta__avatar {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+.article--full .article__meta__avatar img {
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -158,7 +163,6 @@
     }
     .article--full .article__meta__image {
         width: 10%;
-        padding-bottom: 10%;
     }
 
     .article--list-item .article__meta__description {
