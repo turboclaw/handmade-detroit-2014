@@ -8,9 +8,13 @@ Template Name: Page - Panels
 	<section class="panel panel--calendar calendar">
 	    <ol>
 		<?php wp_reset_query();
-		query_posts( 'post_type=event&order=ASC&orderby=menu_order' );
+		query_posts( 'post_type=event&order=ASC&meta_key=hidden_date&orderby=meta_value_num' );
 		while ( have_posts() ) : the_post(); ?>
-	        <li class="calendar__event">
+			<?php
+			$event_date = get_field("hidden_date") / 1000;
+			$today = time();
+			if ( (int)$event_date >= (int)$today ) { ?>
+	        <li class="calendar__event <?php if( get_field("featured") ) { ?>calendar__event--highlight<?php } ?>">
 	            <a href="<?php the_permalink(); ?>">
 	            <date>
 	            <span class="month"><?php the_field("date_month"); ?></span>
@@ -20,6 +24,7 @@ Template Name: Page - Panels
 	            <div class="calendar__event__location"><?php the_field("location"); ?></div>
 	            </a>
 	        </li>
+	        <?php } ?>
 		<?php endwhile;
 		wp_reset_query(); ?>
 	    </ol>
