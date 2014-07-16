@@ -19,6 +19,7 @@
         <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/2014-src.css" />
+        <link rel="alternate" type="application/rss+xml" title="Handmade Detroit" href="http://feeds2.feedburner.com/handmadedetroit/rss" />
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>

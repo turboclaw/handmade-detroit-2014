@@ -18,7 +18,7 @@ Template Name: Page - Contact
 	        <h3>Sign up for our mailing list</h3>
 	        <div class="ddfmwrap">
 	        	<form method="post" action="http://oi.vresp.com?fid=7139dcab8b" target="vr_optin_popup" onsubmit="window.open( 'http://www.verticalresponse.com', 'vr_optin_popup', 'scrollbars=yes,width=600,height=450' ); return true;" >
-	        		<p><label for="email_address">Email</label><input name="email_address" size="15" class="text" /></p>
+	        		<p><label for="email_address">Email</label><input name="email_address" size="15" type="text" class="text" /></p>
 	        		<p><input type="submit" value="Sign me up!" style="submit" /></p>
 	        	</form>
 	        </div>

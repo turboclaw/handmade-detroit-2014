@@ -27,6 +27,9 @@
         <?php }elseif(is_author('lish')){ ?>
             <?php $post_id = $wpdb->get_var("SELECT id FROM wp_posts WHERE post_name='lish-dorset' LIMIT 1");
             $requested_post = get_post($post_id); ?>
+        <?php }elseif(is_author('stephanie')){ ?>
+            <?php $post_id = $wpdb->get_var("SELECT id FROM wp_posts WHERE post_name='stephanie-duimstra' LIMIT 1");
+            $requested_post = get_post($post_id); ?>
         <?php } ?>
         
         <article class="article article--list-item article--author-profile">
