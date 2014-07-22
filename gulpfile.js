@@ -1,13 +1,28 @@
 var gulp = require("gulp");
 
-var minifyCSS = require("gulp-minify-css");
+var cssmin = require("gulp-cssmin");
+var concat = require("gulp-concat");
+var rename = require("gulp-rename");
 
-gulp.task("minify-css", function() {
-
-    gulp.src("css/2014-src.css")
-        .pipe(minifyCSS({}))
-        .pipe(gulp.dest("css/2014.css"));
-
+gulp.task("smooshstyles", function () {
+    gulp.src([
+		"./bower_components/normalize-css/normalize.css",
+		"./css/fonts.css",
+		"./css/base.css",
+		"./css/util.css",
+		"./css/icons.css",
+		"./css/layout.css",
+		"./css/m.forms.css",
+		"./css/m.article.css",
+		"./css/m.comment.css",
+		"./css/m.panel.css",
+		"./css/m.calendar.css",
+		"./css/m.masthead.css",
+		"./css/m.footer.css"
+	])
+	.pipe(concat("2014.css"))
+	.pipe(cssmin())
+	.pipe(gulp.dest("./css"));
 });
 
-gulp.task("default", ["minify-css"]);
+gulp.task("default", ["smooshstyles"]);
