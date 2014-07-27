@@ -22,7 +22,7 @@
         <link rel="alternate" type="application/rss+xml" title="Handmade Detroit" href="http://feeds2.feedburner.com/handmadedetroit/rss" />
         <?php wp_head(); ?>
     </head>
-    <body <?php global $currentsiteclass; body_class( $currentsiteclass ); ?>>
+    <body <?php global $currentsiteclass, $currentsite; body_class( $currentsiteclass ); ?>>
         <?php 
         if( !is_front_page() ) {
             wp_reset_query();
@@ -36,11 +36,21 @@
         <header role="banner" class="masthead" style="background-image: url(<?php echo $post_thumbnail_url; ?>);">
             <h1 class="masthead__logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $currentsite; ?>.svg" alt="<?php bloginfo("name"); ?>" /></a></h1>
             <nav role="navigation" class="masthead__nav">
+            <?php if ($currentsite == "handmade-detroit") { ?>
                 <ul>
                     <li><a href="http://detroiturbancraftfair.com">D.U.C.F.</a></li>
                     <li><a href="/blog/">Blog</a></li>
                     <li><a href="/about/">About</a></li>
                     <li><a href="/contact/">Contact</a></li>
                 </ul>
+            <?php } elseif ($currentsite == "ducf") { ?>
+                <ul>
+                    <li class="when-where">December 6-7, <a href="https://www.google.com/maps/place/Masonic+Temple+Theater/@42.341748,-83.060119,17z/data=!3m1!4b1!4m2!3m1!1s0x8824d2b52914640d:0x6b965658df8a8113">Masonic Temple, Detroit</a></li>
+                    <li><a href="/apply/">Apply</a></li>
+                    <li><a href="/faq/">Faq</a></li>
+                    <li><a href="/sponsors/">Sponsors</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            <?php } ?>
             </nav>
         </header>

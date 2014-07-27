@@ -5,6 +5,7 @@ Template Name: Page - Panels
 ?>
 <?php get_header(); ?>
 <main role="main">
+<?php global $currentsite; if ($currentsite == "handmade-detroit") { ?>
 	<section class="panel panel--calendar calendar">
 	    <ol>
 		<?php wp_reset_query();
@@ -29,6 +30,7 @@ Template Name: Page - Panels
 		wp_reset_query(); ?>
 	    </ol>
 	</section>
+<?php } ?>
 
 	<?php dynamic_sidebar( "front_panels" ); ?>
 </main>
