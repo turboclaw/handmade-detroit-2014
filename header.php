@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <?php include_once "siteinfo.php"; ?>
         <title><?php bloginfo('name'); ?><?php if ( !is_front_page() ) { echo " | "; wp_title(""); } ?></title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="<?php bloginfo('description'); ?>" />
@@ -23,7 +22,7 @@
         <link rel="alternate" type="application/rss+xml" title="Handmade Detroit" href="http://feeds2.feedburner.com/handmadedetroit/rss" />
         <?php wp_head(); ?>
     </head>
-    <body <?php body_class( $currentsiteclass ); ?>>
+    <body <?php global $currentsiteclass; body_class( $currentsiteclass ); ?>>
         <?php 
         if( !is_front_page() ) {
             wp_reset_query();

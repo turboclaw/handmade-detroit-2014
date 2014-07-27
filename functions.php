@@ -1,5 +1,8 @@
 <?php
 
+$currentsite = "ducf";
+$currentsiteclass = "site-" . $currentsite;
+
 add_theme_support( 'post-thumbnails' );
 
 

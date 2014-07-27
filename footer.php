@@ -1,5 +1,5 @@
         <footer role="contentinfo" class="cf">
-            <small>© 2014, Handmade Detroit</small>
+            <small>© 2014, <a href="http://handmadedetroit.com">Handmade Detroit</a></small>
             <ul class="social">
                 <li><a href="https://www.facebook.com/handmadedetroit" data-icon="facebook"><span>Facebook</span></a></li>
                 <li><a href="https://twitter.com/handmadedetroit" data-icon="twitter"><span>Twitter</span></a></li>
@@ -14,7 +14,13 @@
         </script>
         <script type="text/javascript">
         try {
+        <?php 
+        global $currentsite;
+        if ($currentsite == "handmade-detroit") { ?>
         var pageTracker = _gat._getTracker("UA-7347937-1");
+        <?php } elseif ($currentsite == "ducf") { ?>
+        var pageTracker = _gat._getTracker("UA-470288-3");
+        <?php } ?>
         pageTracker._trackPageview();
         } catch(err) {}</script>
         <?php wp_footer(); ?>
