@@ -1,0 +1,13 @@
+.site-ducf .article__title a:not(:hover) {
+    background: transparent;
+    color: inherit;
+}
+.article__meta__image {
+    background-color: #f36102;
+}
+.site-ducf .article__meta__description [data-icon] {
+    background-color: transparent;
+}
+.site-ducf .article--full .article__meta__image {
+    background-color: transparent;
+}

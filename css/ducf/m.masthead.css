@@ -1,0 +1,10 @@
+.site-ducf .masthead {
+    background-color: #f36102;
+}
+.site-ducf .masthead__nav a:link, .site-ducf .masthead__nav a:visited {
+    background-color: transparent;
+    color: #fff;
+}
+.site-ducf .masthead__nav a:hover, .site-ducf .masthead__nav a:active, .site-ducf .masthead__nav a:focus {
+    color: #f36102;
+}

@@ -1,0 +1,15 @@
+.site-ducf .panel {
+    background-color: #f36102;
+    color: #fff;
+}
+.site-ducf .panel__title a {
+    background: transparent;
+    color: #fff;
+}
+.site-ducf .panel__title a:hover, .site-ducf .panel__title a:active, .site-ducf .panel__title a:focus {
+    color: #f36102;
+}
+.site-ducf .panel__body > span {
+    background-color: rgba(243, 97, 2, 0.75);
+    box-shadow: 0 0 0 3px rgba(243, 97, 2, 0.75);
+}

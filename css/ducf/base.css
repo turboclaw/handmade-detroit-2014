@@ -1,7 +1,8 @@
 .site-ducf a:link, .site-ducf a:visited {
-    color: #ff6a00;
-    background-color: #65E2FF;
+    color: #f36102;
+    background-color: #a5d9f6;
 }
 .site-ducf a:hover, .site-ducf a:active, .site-ducf a:focus {
-    background-color: #65E2FF;
+    color: #fff;
+    background-color: #f36102;
 }

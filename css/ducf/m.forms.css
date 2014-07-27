@@ -1,0 +1,10 @@
+.site-ducf input:focus,
+.site-ducf textarea:focus,
+.site-ducf select:focus {
+    border-color: #f36102;
+}
+.site-ducf button,
+.site-ducf input[type="submit"],
+.site-ducf .button {
+    background-color: #f36102;
+}

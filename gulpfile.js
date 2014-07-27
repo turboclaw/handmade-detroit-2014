@@ -23,7 +23,12 @@ gulp.task("concatstyles", function () {
 		"./css/m.panel.css",
 		"./css/m.calendar.css",
 		"./css/m.masthead.css",
-		"./css/m.footer.css"
+		"./css/m.footer.css",
+
+		"./css/ducf/m.forms.css",
+		"./css/ducf/m.article.css",
+		"./css/ducf/m.panel.css",
+		"./css/ducf/m.masthead.css"
 	])
 	.pipe(concat("2014.css"))
 	.pipe(cssmin())
