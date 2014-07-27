@@ -9,6 +9,7 @@ gulp.task("smooshstyles", function () {
 		"./bower_components/normalize-css/normalize.css",
 		"./css/fonts.css",
 		"./css/base.css",
+		"./css/ducf/base.css",
 		"./css/util.css",
 		"./css/icons.css",
 		"./css/layout.css",

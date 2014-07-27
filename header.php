@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <?php include_once "siteinfo.php"; ?>
         <title><?php bloginfo('name'); ?><?php if ( !is_front_page() ) { echo " | "; wp_title(""); } ?></title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="<?php bloginfo('description'); ?>" />
@@ -22,7 +23,7 @@
         <link rel="alternate" type="application/rss+xml" title="Handmade Detroit" href="http://feeds2.feedburner.com/handmadedetroit/rss" />
         <?php wp_head(); ?>
     </head>
-    <body <?php body_class(); ?>>
+    <body <?php body_class( $currentsiteclass ); ?>>
         <?php 
         if( !is_front_page() ) {
             wp_reset_query();
@@ -34,7 +35,7 @@
         }
         ?>
         <header role="banner" class="masthead" style="background-image: url(<?php echo $post_thumbnail_url; ?>);">
-            <h1 class="masthead__logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/handmade-detroit.svg" alt="Handmade Detroit" /></a></h1>
+            <h1 class="masthead__logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $currentsite; ?>.svg" alt="<?php bloginfo("name"); ?>" /></a></h1>
             <nav role="navigation" class="masthead__nav">
                 <ul>
                     <li><a href="http://detroiturbancraftfair.com">D.U.C.F.</a></li>
