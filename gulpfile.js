@@ -4,7 +4,11 @@ var cssmin = require("gulp-cssmin");
 var concat = require("gulp-concat");
 var rename = require("gulp-rename");
 
-gulp.task("smooshstyles", function () {
+var paths = {
+  styles: ["./css/**/*.css"]
+};
+
+gulp.task("concatstyles", function () {
     gulp.src([
 		"./bower_components/normalize-css/normalize.css",
 		"./css/fonts.css",
@@ -26,4 +30,8 @@ gulp.task("smooshstyles", function () {
 	.pipe(gulp.dest("./css"));
 });
 
-gulp.task("default", ["smooshstyles"]);
+gulp.task("watch", function() {
+  gulp.watch(paths.styles, ["concatstyles"]);
+});
+
+gulp.task("default", ["watch", "concatstyles"]);
