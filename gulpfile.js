@@ -16,6 +16,7 @@ gulp.task("concatstyles", function () {
 		"./css/ducf/base.css",
 		"./css/util.css",
 		"./css/icons.css",
+		"./bower_components/dpz-grid/l.grid.css",
 		"./css/layout.css",
 		"./css/m.forms.css",
 		"./css/m.article.css",
