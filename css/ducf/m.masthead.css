@@ -8,3 +8,18 @@
 .site-ducf .masthead__nav a:hover, .site-ducf .masthead__nav a:active, .site-ducf .masthead__nav a:focus {
     color: #f36102;
 }
+.masthead__nav .when-where {
+    font-size: 0.666666667em;
+    background-color: #f36102;
+    padding: 0.125em 0.25em;
+}
+.masthead__nav .when-where a:hover, .masthead__nav .when-where a:active, .masthead__nav .when-where a:focus {
+    color: #a5d9f6;
+}
+.masthead__nav .when-where:after {
+    content: "\A";
+    white-space: pre;
+}
+.masthead__nav .when-where + li {
+	margin-left: 0;
+}

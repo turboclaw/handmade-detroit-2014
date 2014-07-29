@@ -33,9 +33,11 @@
             wp_reset_query();
         }
         ?>
-        <header role="banner" class="masthead" style="background-image: url(<?php echo $post_thumbnail_url; ?>);">
-            <h1 class="masthead__logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $currentsite; ?>.svg" alt="<?php bloginfo("name"); ?>" /></a></h1>
-            <nav role="navigation" class="masthead__nav">
+        <header role="banner" class="masthead grid grid--no-gutter" style="background-image: url(<?php echo $post_thumbnail_url; ?>);">
+            <h1 class="masthead__logo <?php if(is_front_page()) { ?>grid__cell--one-third<?php } else { ?>grid__cell--five-eighths<?php } ?> grid__cell--handheld--one">
+                <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $currentsite; ?>.svg" alt="<?php bloginfo("name"); ?>" /></a>
+            </h1>
+            <nav role="navigation" class="masthead__nav <?php if(is_front_page()) { ?>grid__cell--two-thirds<?php } else { ?>grid__cell--three-eighths<?php } ?> grid__cell--handheld--one">
             <?php if ($currentsite == "handmade-detroit") { ?>
                 <ul>
                     <li><a href="http://detroiturbancraftfair.com">D.U.C.F.</a></li>
@@ -45,7 +47,7 @@
                 </ul>
             <?php } elseif ($currentsite == "ducf") { ?>
                 <ul>
-                    <li class="when-where">December 6-7, <a href="https://www.google.com/maps/place/Masonic+Temple+Theater/@42.341748,-83.060119,17z/data=!3m1!4b1!4m2!3m1!1s0x8824d2b52914640d:0x6b965658df8a8113">Masonic Temple, Detroit</a></li>
+                    <li class="when-where"><span title="Saturday, December 6th from 10am to 7pm, and Sunday December 7th from 11am to 6pm">December 6-7</span>, <a href="https://www.google.com/maps/place/Masonic+Temple+Theater/@42.341748,-83.060119,17z/data=!3m1!4b1!4m2!3m1!1s0x8824d2b52914640d:0x6b965658df8a8113">Masonic Temple, Detroit</a></li>
                     <li><a href="/apply/">Apply</a></li>
                     <li><a href="/faq/">Faq</a></li>
                     <li><a href="/sponsors/">Sponsors</a></li>

@@ -1,5 +1,6 @@
 <?php
 
+// $currentsite = "handmade-detroit";
 $currentsite = "ducf";
 $currentsiteclass = "site-" . $currentsite;
 
