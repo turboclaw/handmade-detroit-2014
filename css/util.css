@@ -11,3 +11,21 @@
     display: table;
     clear: both;
 }
+
+.note {
+    font-size: 0.875em;
+    opacity: 0.75;
+}
+
+.parsley-error {
+	color: #c00;
+}
+input.parsley-error {
+	border-color: #c00;
+	background-color: #fc8484 !important;
+}
+.parsley-errors-list {
+	list-style: none;
+	color: #c00;
+	font-style: italic;
+}

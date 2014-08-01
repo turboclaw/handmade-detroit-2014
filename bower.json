@@ -18,6 +18,8 @@
   ],
   "dependencies": {
     "normalize-css": "latest",
-    "dpz-grid": "https://github.com/dominosui/dpz-grid.git"
+    "dpz-grid": "https://github.com/dominosui/dpz-grid.git",
+    "parsleyjs": "~2.0.3",
+    "jquery": "~2.1.1"
   }
 }
