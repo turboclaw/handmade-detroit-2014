@@ -111,16 +111,16 @@ Template Name: Application Form
                     <textarea name="comments" id="comments" rows="6" cols="40"></textarea>
                 </div>
                 <div class="grid__cell--one">
-                    <p><strong>Applications are due by Midnight, September 25th.</strong></p>
+                    <p><strong>Applications are due by Midnight (Eastern), September 25th.</strong></p>
                     <p>All applicants will be notified of status (acceptance, waiting list or rejection) by October 6th.</p>
                     <h3>Application Fee</h3>
                     <p>The application fee is $10 and is non-refundable. <span class="note">Be sure to enter your business name<span class="js-businessName"></span> on the PayPal checkout page. Your application will be rejected if we can't match up paid fees to submitted apps.</p>
-                    <p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KN8C7YPLSCG2J" target="_blank" class="button">Pay Application Fee on PayPal.com</a></p>
+                    <p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MS5DVME8HXSTE" target="_blank" class="button">Pay Application Fee on PayPal.com</a></p>
                     <div class="form__control-group--toggle">
                         <input type="checkbox" name="name_on_apps" value="" id="name_on_apps" required /><label for="name_on_apps">Yes, I entered my business name<span class="js-businessName"></span> with my application fee on PayPal.</label>
                     </div>
                     <h3>Vendor Fee</h3>
-                    <p>$175 due upon acceptance. For an additional $75 ($250 total), you may request a corner space. For more info on fees and payment, please see the <a href="/faq/">FAQs</a>.</p>
+                    <p>$175, due upon acceptance. (Once accepted, for an additional $75 [$250 total], you may request a corner space.) For more info on fees and payment, please see the <a href="/faq/">FAQs</a>.</p>
                     <h3>Vendor Policies</h3>
                     <div class="app_policies">
                         <p>PLEASE READ THE FOLLOWING TERMS AND CONDITIONS VERY CAREFULLY.</p>
@@ -134,7 +134,7 @@ Template Name: Application Form
                             <li>Accepted Vendors are responsible for their own clean up.</li>
                             <li>Music of any sort is prohibited.</li>
                             <li>Accepted Vendors consent to being photographed and recorded for publicity and promotion purposes.</li>
-                            <li>Accepted Vendors may not sell merchandise that contains the words &quot;Detroit Urban Craft Fair&quot;; &quot;Handmade Detroit&quot;; &quot;Craft Revival&quot; or depicting Handmade Detroit; Craft Revival or Detroit Urban Craft Fair logos (including the mitten pin or similar likeness), slogans or sinage unless specifically authorized by Handmade Detroit.</li>
+                            <li>Accepted Vendors may not sell merchandise that contains the words &quot;Detroit Urban Craft Fair&quot;; &quot;Handmade Detroit&quot;; or depicting Handmade Detroit or Detroit Urban Craft Fair logos, slogans or sinage unless specifically authorized by Handmade Detroit.</li>
                             <li>Mass-produced merchandise is prohibited at all Handmade Detroit events.</li>
                             <li>Accepted Vendors are solely responsible for collection and payment of their own taxes (all applicable city, county, state and federal sales and other taxes), licenses, personal and business liabilities and insurance.</li>
                             <li>Accepted Vendors agree to accept full responsibility for any damage caused by the negligence or volition of the Accepted Vendor, Accepted Vendor family members, employees or guests during event setup, tear down or event hours. Accepted Vendor responsibility specifically includes payment of all damages and indemnification of Handmade Detroit from any such liability.</li>
