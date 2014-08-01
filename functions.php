@@ -254,7 +254,7 @@ class ducf_apply_panel extends WP_Widget {
 		}?>
 		<section class="panel panel--apply" style="background-image: url(<?php echo $post_thumbnail_url; ?>)">
 		    <div class="panel__header">
-		        <h1 class="panel__title"><a href="/about/"><?php the_title(); ?></a></h1>
+		        <h1 class="panel__title"><a href="/apply/"><?php the_title(); ?></a></h1>
 		    </div>
 		    <div class="panel__body">
 		        <span><?php $unwrapped_excerpt = get_the_excerpt(); echo $unwrapped_excerpt; ?></span>
@@ -304,7 +304,7 @@ class ducf_faq_panel extends WP_Widget {
 		}?>
 		<section class="panel panel--apply" style="background-image: url(<?php echo $post_thumbnail_url; ?>)">
 		    <div class="panel__header">
-		        <h1 class="panel__title"><a href="/about/"><?php the_title(); ?></a></h1>
+		        <h1 class="panel__title"><a href="/faq/"><?php the_title(); ?></a></h1>
 		    </div>
 		    <div class="panel__body">
 		        <span><?php $unwrapped_excerpt = get_the_excerpt(); echo $unwrapped_excerpt; ?></span>
@@ -354,7 +354,7 @@ class ducf_sponsors_panel extends WP_Widget {
 		}?>
 		<section class="panel panel--apply" style="background-image: url(<?php echo $post_thumbnail_url; ?>)">
 		    <div class="panel__header">
-		        <h1 class="panel__title"><a href="/about/"><?php the_title(); ?></a></h1>
+		        <h1 class="panel__title"><a href="/sponsors/"><?php the_title(); ?></a></h1>
 		    </div>
 		    <div class="panel__body">
 		        <span><?php $unwrapped_excerpt = get_the_excerpt(); echo $unwrapped_excerpt; ?></span>

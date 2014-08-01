@@ -13,6 +13,8 @@ Template Name: Page - Contact
         <div class="article__body cf">
 	        <?php the_content(); ?>
 
+            <?php global $currentsite;
+            if ($currentsite == "handmade-detroit") { ?>
 	        <h3>Send us an email</h3>
 	        <?php global $ddfm; echo $ddfm{1}->generate_data(); ?>
 	        <h3>Sign up for our mailing list</h3>
@@ -22,6 +24,7 @@ Template Name: Page - Contact
 	        		<p><input type="submit" value="Sign me up!" style="submit" /></p>
 	        	</form>
 	        </div>
+            <?php } ?>
         </div>
     </article>
 
