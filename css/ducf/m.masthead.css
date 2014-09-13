@@ -23,3 +23,14 @@
 .masthead__nav .when-where + li {
 	margin-left: 0;
 }
+
+.site-ducf.home .masthead__logo a {
+    margin-top: 0.5%;
+}
+.site-ducf .masthead__logo img {
+    margin: 0 0 0 10%;
+    width: 30%;
+}
+.site-ducf.home .masthead__logo img {
+    margin: 0 0 0 20%;
+}
