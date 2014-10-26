@@ -70,6 +70,24 @@ function new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
+if( ! ( function_exists( 'wp_get_attachment_by_post_name' ) ) ) {
+    function wp_get_attachment_by_post_name( $post_name ) {
+        $args = array(
+            'post_per_page' => 1,
+            'post_type'     => 'attachment',
+            'name'          => trim ( $post_name ),
+        );
+        $get_posts = new Wp_Query( $args );
+
+        if ( $get_posts->posts[0] )
+            return $get_posts->posts[0];
+        else
+          return false;
+    }
+}
+
+add_image_size( "vendor-logo", 215, 110, true );
+
 function hd_widgets_init() {
 	register_sidebar( array(
 		'name' => 'Front Page Panels',
