@@ -48,10 +48,10 @@
             <?php } elseif ($currentsite == "ducf") { ?>
                 <ul>
                     <li class="when-where"><span title="Saturday, December 6th from 10am to 7pm, and Sunday December 7th from 11am to 6pm">December 6-7</span>, <a href="https://www.google.com/maps/place/Masonic+Temple+Theater/@42.341748,-83.060119,17z/data=!3m1!4b1!4m2!3m1!1s0x8824d2b52914640d:0x6b965658df8a8113">Masonic Temple, Detroit</a></li>
-                    <li><a href="/apply/">Apply</a></li>
-                    <li><a href="/faq/">Faq</a></li>
+                    <li><a href="/vendors/">Vendors</a></li>
                     <li><a href="/sponsors/">Sponsors</a></li>
-                    <li><a href="/contact/">Contact</a></li>
+                     <li><a href="/faq/">FAQ</a></li>
+                   <li><a href="/contact/">Contact</a></li>
                 </ul>
             <?php } ?>
             </nav>

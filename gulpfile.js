@@ -29,6 +29,7 @@ gulp.task("concatstyles", function () {
 		"./css/ducf/m.forms.css",
 		"./css/ducf/m.article.css",
 		"./css/ducf/m.panel.css",
+		"./css/ducf/m.vendor-list.css",
 		"./css/ducf/m.masthead.css",
 		"./css/ducf/m.footer.css"
 	])

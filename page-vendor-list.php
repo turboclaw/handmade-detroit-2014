@@ -13,21 +13,24 @@ Template Name: Page - Vendor List
         <div class="article__body cf">
 	        <?php the_content(); ?>
 
-            <?php
+            <ul class="vendor-list grid">
+                
+            <?php wp_reset_query();
+            query_posts( 'post_type=vendor&order=ASC&orderby=rand' );
+            while ( have_posts() ) : the_post();
 
-            $attachment = wp_get_attachment_by_post_name( "apple" );
-            // Replace post_name by the name/slug of the attachment
-            // It will give you an object, which you can render like below to get the ID and post_parent
-            if ( $attachment ) {
-                echo $attachment->ID . " "; // Gives the id of the attachment
-                echo $attachment->post_parent . " "; // Gives the post_parent id
-                echo $attachment->post_title . " "; // Gives the attachment title.
-                echo $attachment->post_content . " ";
+                $attachment = wp_get_attachment_by_post_name( $post->post_name . "-2" );
 
-                echo "<li class='grid__cell--one-quarter'><a href='" . $attachment->post_content . "'>" . wp_get_attachment_image( $attachment->ID, "vendor-logo" ) . "</a></li>";
-            }
+                if($attachment){
+                    echo "<li class='vendor-tile grid__cell--one-quarter grid__cell--tablet--one-third grid__cell--handheld--one-half'><a href='" . $attachment->post_content . "'>" . wp_get_attachment_image( $attachment->ID, "vendor-logo" ) . "</a></li>";
+                } else {
+                    echo "<li class='vendor-tile vendor-tile--empty grid__cell--one-quarter grid__cell--tablet--one-third grid__cell--handheld--one-half'>" . $post->post_title . "</li>";
+                }
+                
+            endwhile;
+            wp_reset_query(); ?>
 
-            ?>
+            </ul>
         </div>
     </article>
 

@@ -1,0 +1,16 @@
+.vendor-list {
+	display: flex;
+	align-items: center;
+}
+.vendor-tile {
+	text-align: center;
+	background-color: #e0d8d5;
+	margin-bottom: 2.5%;
+}
+.vendor-tile--empty {
+	padding: 0.5em;
+}
+.vendor-tile img {
+	display: block;
+	margin: 0 auto;
+}

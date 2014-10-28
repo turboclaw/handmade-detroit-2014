@@ -75,6 +75,7 @@ if( ! ( function_exists( 'wp_get_attachment_by_post_name' ) ) ) {
         $args = array(
             'post_per_page' => 1,
             'post_type'     => 'attachment',
+            'post_status'   => 'inherit',
             'name'          => trim ( $post_name ),
         );
         $get_posts = new Wp_Query( $args );
