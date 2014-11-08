@@ -16,7 +16,7 @@ Template Name: Page - Vendor List
             <ul class="vendor-list grid">
                 
             <?php wp_reset_query();
-            query_posts( 'post_type=vendor&order=ASC&orderby=rand' );
+            query_posts( 'post_type=vendor&order=ASC&orderby=name' );
             while ( have_posts() ) : the_post();
 
                 $attachment = wp_get_attachment_by_post_name( $post->post_name . "-2" );

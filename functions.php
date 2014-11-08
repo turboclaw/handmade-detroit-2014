@@ -391,4 +391,54 @@ add_action(
 	create_function('','return register_widget("ducf_sponsors_panel");')
 );
 
+class ducf_vendors_panel extends WP_Widget {
+	function ducf_vendors_panel() {
+		$widget_ops = array(
+			'classname' => 'ducf_vendors_panel',
+			'description' => 'DUCF sponsor page panel'
+		);
+
+		$this->WP_Widget(
+			'ducf_vendors_panel',
+			'vendors Panel',
+			$widget_ops
+		);
+	}
+
+	function widget($args, $instance) {
+		extract($args, EXTR_SKIP);
+		echo $before_widget;
+
+		wp_reset_query();
+		query_posts( 'post_type=default_panels&orderby=rand&posts_per_page=1' );
+		while ( have_posts() ) : the_post();
+		$post_thumbnail_url = get_field("image");
+		endwhile;
+
+		wp_reset_query();
+		query_posts( 'post_type=front_page_panels&posts_per_page=1&name=panel-vendors' );
+		while ( have_posts() ) : the_post(); ?>
+		<?php if ( has_post_thumbnail() ) { 
+			$post_thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		}?>
+		<section class="panel panel--apply" style="background-image: url(<?php echo $post_thumbnail_url; ?>)">
+		    <div class="panel__header">
+		        <h1 class="panel__title"><a href="/vendors/"><?php the_title(); ?></a></h1>
+		    </div>
+		    <div class="panel__body">
+		        <span><?php $unwrapped_excerpt = get_the_excerpt(); echo $unwrapped_excerpt; ?></span>
+		    </div>
+		</section>
+		<?php endwhile;
+		wp_reset_query();
+
+		echo $after_widget;
+	}
+}
+
+add_action(
+	'widgets_init',
+	create_function('','return register_widget("ducf_vendors_panel");')
+);
+
 ?>

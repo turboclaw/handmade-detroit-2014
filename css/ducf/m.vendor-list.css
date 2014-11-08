@@ -1,4 +1,5 @@
-.vendor-list {
+.vendor-list,
+.sponsor-list {
 	display: flex;
 	align-items: center;
 }
@@ -10,7 +11,8 @@
 .vendor-tile--empty {
 	padding: 0.5em;
 }
-.vendor-tile img {
+.vendor-tile img,
+.sponsor-list img {
 	display: block;
 	margin: 0 auto;
 }
